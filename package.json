@@ -55,7 +55,6 @@
   "scripts": {
     "develop": "GATSBY_GRAPHQL_IDE=playground npx gatsby develop",
     "start": "yarn develop",
-    "lint": "./node_modules/.bin/eslint --ext .js --ignore-pattern public .",
-    "build": "npx gatsby build"
+    "lint": "./node_modules/.bin/eslint --ext .js --ignore-pattern public ."
   }
 }
