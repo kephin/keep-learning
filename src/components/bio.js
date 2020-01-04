@@ -5,16 +5,21 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
+import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
+import Image from 'gatsby-image'
+import styled from 'styled-components'
+import { rhythm } from '../utils/typography'
 
-import { rhythm } from "../utils/typography"
+const Container = styled.div`
+  display: flex;
+  margin-bottom: ${rhythm(2.5)};
+`
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {
-      avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+      avatar: file(absolutePath: { regex: "/profile-pic.jpeg/" }) {
         childImageSharp {
           fixed(width: 50, height: 50) {
             ...GatsbyImageSharpFixed
@@ -25,7 +30,7 @@ const Bio = () => {
         siteMetadata {
           author
           social {
-            twitter
+            github
           }
         }
       }
@@ -34,12 +39,7 @@ const Bio = () => {
 
   const { author, social } = data.site.siteMetadata
   return (
-    <div
-      style={{
-        display: `flex`,
-        marginBottom: rhythm(2.5),
-      }}
-    >
+    <Container>
       <Image
         fixed={data.avatar.childImageSharp.fixed}
         alt={author}
@@ -54,14 +54,13 @@ const Bio = () => {
         }}
       />
       <p>
-        Written by <strong>{author}</strong> who lives and works in San
-        Francisco building useful things.
+        Written by <b>{author}</b>, a <i>Taiwanese</i> lives and works in <i>Singapore</i> exploring the programming world.
         {` `}
-        <a href={`https://twitter.com/${social.twitter}`}>
-          You should follow him on Twitter
+        <a href={`https://github.com/${social.github}`}>
+          You can find me on github
         </a>
       </p>
-    </div>
+    </Container>
   )
 }
 
