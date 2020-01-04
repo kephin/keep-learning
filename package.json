@@ -7,6 +7,10 @@
   "bugs": {
     "url": "https://github.com/kephin/keep-learning/issues"
   },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.17.0"
+  },
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.6",
     "gatsby": "^2.18.12",
@@ -49,10 +53,9 @@
     "url": "git+https://github.com/kephin/keep-learning.git"
   },
   "scripts": {
-    "build": "npx gatsby build",
     "develop": "GATSBY_GRAPHQL_IDE=playground npx gatsby develop",
-    "start": "yarn run develop",
-    "serve": "npx gatsby serve",
-    "clean": "npx gatsby clean"
+    "start": "yarn develop",
+    "lint": "./node_modules/.bin/eslint --ext .js --ignore-pattern public .",
+    "build": "npx gatsby build"
   }
 }
