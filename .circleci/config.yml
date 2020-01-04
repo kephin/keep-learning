@@ -47,7 +47,7 @@ jobs:
           command: sudo yarn global add gatsby
       - run:
           name: Build
-          command: gatsby build
+          command: sudo gatsby build
       - persist_to_workspace:
           root: ./
           paths:
