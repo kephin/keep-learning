@@ -3,7 +3,7 @@ module.exports = {
     title: 'Keep Learning',
     author: 'kephin',
     description: 'Wriiten by kephin. Personal blog of notes from online courses/other blogs/books',
-    siteUrl: 'https://kephin.github.io',
+    siteUrl: 'https://keep-learning.netlify.com/',
     social: {
       github: 'kephin',
     },
