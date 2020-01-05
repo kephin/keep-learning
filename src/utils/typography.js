@@ -1,8 +1,6 @@
 import Typography from 'typography'
 import githubTheme from 'typography-theme-github'
 
-// import './global.css'
-
 const typography = new Typography(githubTheme)
 
 // Hot reload typography in development.

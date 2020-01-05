@@ -1,5 +1,5 @@
 ---
-title: Test post
+title: redux post
 date: "2020-01-05T15:30"
 description: "This is a test"
 ---

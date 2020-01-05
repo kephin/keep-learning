@@ -3,7 +3,7 @@ import { Link, graphql } from 'gatsby'
 import Bio from '../components/bio'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import { ArticleTitle, ArticleDate, Footer, Navigator } from './styledComponents'
+import { ArticleTitle, ArticleDate, Footer, NavigatorUl, Navigator } from './styledComponents'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -32,22 +32,22 @@ class BlogPostTemplate extends React.Component {
           </Footer>
         </article>
         <nav>
-          <Navigator>
+          <NavigatorUl>
             <li>
               {previous && (
-                <Link to={previous.fields.slug} rel='prev'>
+                <Navigator to={previous.fields.slug} rel='prev'>
                   ← {previous.frontmatter.title}
-                </Link>
+                </Navigator>
               )}
             </li>
             <li>
               {next && (
-                <Link to={next.fields.slug} rel='next'>
+                <Navigator to={next.fields.slug} rel='next'>
                   {next.frontmatter.title} →
-                </Link>
+                </Navigator>
               )}
             </li>
-          </Navigator>
+          </NavigatorUl>
         </nav>
       </Layout>
     )
