@@ -43,11 +43,8 @@ jobs:
       - <<: *restore_cache
       - <<: *install_node_modules
       - run:
-          name: Install gatsby
-          command: sudo yarn global add gatsby
-      - run:
           name: Build
-          command: sudo gatsby build
+          command: sudo yarn build
       - persist_to_workspace:
           root: ./
           paths:

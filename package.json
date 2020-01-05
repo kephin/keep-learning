@@ -53,9 +53,9 @@
     "url": "git+https://github.com/kephin/keep-learning.git"
   },
   "scripts": {
-    "develop": "GATSBY_GRAPHQL_IDE=playground npx gatsby develop",
+    "develop": "GATSBY_GRAPHQL_IDE=playground gatsby develop",
     "start": "yarn develop",
     "lint": "./node_modules/.bin/eslint --ext .js --ignore-pattern public .",
-    "build": "npx gatsby build"
+    "build": "gatsby build"
   }
 }
