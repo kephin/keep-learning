@@ -12,10 +12,6 @@ export const ArticleDate = styled.p`
   marginBottom: ${rhythm(1)};
 `
 
-export const Break = styled.hr`
-  margin-bottom: ${rhythm(2)};
-`
-
 export const Navigator = styled.ul`
   display: flex;
   flex-wrap: wrap;
@@ -23,3 +19,8 @@ export const Navigator = styled.ul`
   list-style: none;
   padding: 0;
 `
+
+export const Footer = styled.footer`
+  margin-top: 50px;
+`
+

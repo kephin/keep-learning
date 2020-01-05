@@ -3,7 +3,7 @@ import { Link, graphql } from 'gatsby'
 import Bio from '../components/bio'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import { ArticleTitle, ArticleDate, Break, Navigator } from './styledComponents'
+import { ArticleTitle, ArticleDate, Footer, Navigator } from './styledComponents'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -27,12 +27,10 @@ class BlogPostTemplate extends React.Component {
             </ArticleDate>
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
-          <Break />
-          <footer>
+          <Footer>
             <Bio />
-          </footer>
+          </Footer>
         </article>
-
         <nav>
           <Navigator>
             <li>
