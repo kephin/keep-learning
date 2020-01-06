@@ -54,7 +54,7 @@ const Bio = () => {
         }}
       />
       <p>
-        Written by <b>{author}</b>, a <i>Taiwanese</i> lives and works in <i>Singapore</i> exploring the programming world.
+        Written by <b>{author}</b>, a <i>Taiwanese</i> that lives and works in <i>Singapore</i> exploring the programming world.
         {` `}
         <a href={`https://github.com/${social.github}`}>
           You can find me on github
