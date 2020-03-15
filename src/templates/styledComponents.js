@@ -9,7 +9,7 @@ export const ArticleTitle = styled.h1`
 `
 
 export const ArticleDate = styled.p`
-  color: rgb(230, 225, 216);
+  color: rgb(136, 108, 59);
   ${scale(-1 / 5)};
   display: block;
   marginBottom: ${rhythm(1)};
