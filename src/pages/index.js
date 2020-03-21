@@ -13,6 +13,7 @@ const ArticleTitle = styled.h3`
 const ArticleLink = styled(Link)`
   color: rgb(196, 167, 94);
   box-shadow: none;
+  font-weight: 400;
   &:hover {
     text-decoration: none;
   }

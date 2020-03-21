@@ -30,10 +30,6 @@ h3, h4, h5, h6 {
   font-family: merriweather;
 }
 
-ul li {
-  list-style: square;
-}
-
 thead > tr{
   height: 10px;
 }

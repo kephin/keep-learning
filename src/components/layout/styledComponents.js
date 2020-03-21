@@ -28,6 +28,7 @@ export const TitleLink = styled(Link)`
   box-shadow: none;
   text-decoration: none;
   color: inherit;
+  font-weight: bold;
   &:hover {
     text-decoration: none;
   }
