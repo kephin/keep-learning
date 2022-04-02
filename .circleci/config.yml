@@ -7,21 +7,18 @@ jobs:
       - image: cimg/node:17.8.0
     steps:
       - checkout
-      - run:
-          name: Update NPM
-          command: "sudo npm install -g npm"
       - restore_cache:
-          key: dependency-cache-{{ checksum "package-lock.json" }}
+          key: dependency-cache-{{ checksum "yarn.lock" }}
       - run:
           name: Install Dependencies
-          command: npm install
+          command: yarn install
       - save_cache:
-          key: dependency-cache-{{ checksum "package-lock.json" }}
+          key: dependency-cache-{{ checksum "yarn.lock" }}
           paths:
             - ./node_modules
       - run:
           name: Gatsby Build
-          command: GATSBY_CPU_COUNT=2 npm run build
+          command: GATSBY_CPU_COUNT=2 yarn build
       - save_cache:
           key: gatsby-public-cache-{{ .Branch }}
           paths:
@@ -29,6 +26,7 @@ jobs:
       - run:
           name: Deploy to Netlify
           command: ./node_modules/.bin/netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_ACCESS_TOKEN --prod --dir=public
+
 workflows:
   version: 2
   build-deploy:
