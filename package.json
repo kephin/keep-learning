@@ -35,6 +35,7 @@
     "use-dark-mode": "^2.3.1"
   },
   "devDependencies": {
+    "netlify-cli": "^9.16.1",
     "prettier": "^2.5.1"
   },
   "homepage": "https://github.com/kephin/keep-learning#readme",
