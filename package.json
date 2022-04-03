@@ -1,8 +1,8 @@
 {
   "name": "keep-learning",
   "private": true,
-  "description": "personal blog of courses, other posts and books",
-  "version": "0.1.0",
+  "description": "personal blog of courses,blog posts and books",
+  "version": "0.2.0",
   "author": "kephin",
   "bugs": {
     "url": "https://github.com/kephin/keep-learning/issues"
