@@ -3,34 +3,39 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-AstroPaper is a minimal, responsive and SEO-friendly Astro blog theme. I designed and crafted this based on [my personal blog](https://satnaing.dev/blog).
-
-This theme is aimed to be accessible out of the box. Light and dark mode are supported by
-default and additional color schemes can also be configured.
-
-This theme is self-documented \_ which means articles/posts in this theme can also be considered as documentations. So, see the documentation for more info.
-
-<div>
-  <img src="/assets/dev.svg" class="sm:w-1/2 mx-auto" alt="coding dev illustration">
-</div>
+Nice to meet you! I'm Kevin, a software engineer in Taiwan.
 
 ## Tech Stack
 
-This theme is written in vanilla JavaScript (+ TypeScript for type checking) and a little bit of ReactJS for some interactions. TailwindCSS is used for styling; and Markdown is used for blog contents.
+Languages
 
-## Features
+- JavaScript
+- TypeScript
+- Rust (learning)
+- Golang (learning)
 
-Here are certain features of this site.
+Front-end development
 
-- fully responsive and accessible
-- SEO-friendly
-- light & dark mode
-- fuzzy search
-- super fast performance
-- draft posts
-- pagination
-- sitemap & rss feed
-- highly customizable
+- React
+- Redux
+- React-query
+- React-hook-form
+- Styled components
+- GraphQL
+- Jest
+- React testing library
+- Rush
+- React Native (learning)
+- Next.js (learning)
 
-If you like this theme, you can star/contribute to the [repo](https://github.com/satnaing/astro-paper).  
-Or you can even give any feedback via my [email](mailto:contact@satnaing.dev).
+Backend development
+
+- Express
+- PostgreSQL
+- MongoDB
+- Docker
+- Kubernetes (learning)
+
+Tools
+
+- Vim (learning)
