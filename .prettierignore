@@ -2,7 +2,7 @@
 /*
 
 # Except these files & folders
-!/src
+!/src/**/*.{md, js, ts, tsx, css, astro}
 !/public/**/*.js
 !/.github
 !tsconfig.json
